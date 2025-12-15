@@ -1,0 +1,37 @@
+{
+  "name": "Frontend Application",
+  "dockerComposeFile": "../compose.yaml",
+  "service": "beeyond-frontend",
+   "workspaceFolder": "/usr/src/beeyond-frontend",
+  "shutdownAction": "stopCompose",
+  "forwardPorts": [3000],
+  "remoteUser": "root",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "wix.vscode-import-cost",
+        "meganrogge.template-string-converter",
+        "esbenp.prettier-vscode",
+        "xabikos.javascriptsnippet",
+        "postman.postman-for-vscode",
+        "dbaeumer.vscode-eslint",
+        "csstools.postcss",
+        "ms-azuretools.vscode-docker",
+        "rvest.vs-code-prettier-eslint",
+        "bradlc.vscode-tailwindcss",
+        "graphql.vscode-graphql",
+        "styled-components.vscode-styled-components",
+        "prisma.prisma",
+        "eamodio.gitlens",
+        "cweijan.vscode-redis-client"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2,
+        "files.eol": "\n",
+        "terminal.integrated.shell.linux": "/bin/bash"
+      }
+    }
+  },
+
+}
